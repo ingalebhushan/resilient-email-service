@@ -4,7 +4,7 @@ const Logger = require('../utils/logger');
 const RateLimiter = require('../utils/rateLimiter');
 const statusStore = require('../statusStore');
 
-const rateLimiter = new RateLimiter(5, 10000); // max 5 emails per 10 sec
+const rateLimiter = new RateLimiter(1, 10000); // max 5 emails per 10 sec
 const providers = [ProviderA, ProviderB];
 
 async function wait(ms) {
